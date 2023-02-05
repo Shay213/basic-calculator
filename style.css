@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    background-color: rgb(241, 241, 241);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-container{
+    background-color: rgb(34, 34, 34);
+    border-radius: 5px;
+    padding: 7px;
+    width: 400px;
+}
+
+.screen input{
+    background-color: rgb(34, 34, 34);
+    display: block;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: end;
+    outline: none;
+    cursor: default;
+    font-size: 2.5rem;
+    height: 3rem;
+    font-weight: 700;
+}
+
+#answer{
+    color: rgb(88, 88, 88);
+    font-size: 2rem;
+}
+
+.screen input::placeholder{
+    color: rgba(255, 255, 255, 0.966);
+}
+
+.btns-container{
+    display: grid;
+    grid-template: repeat(5, 55px) / repeat(4, 1fr);
+    gap: 3px;
+}
+
+.btns-container input{
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: rgba(255, 255, 255, 0.966);
+    background-color: rgb(52, 52, 52);
+}
+
+.btns-container input:hover{
+    opacity: 0.8;
+}
+
+.btns-container input.darker{
+    background-color:rgb(44, 44, 44);
+}
+
+.btns-container input.blue{
+    background-color: rgb(69, 115, 153);
+}
+
