@@ -26,10 +26,11 @@ body{
     font-size: 2.5rem;
     height: 3rem;
     font-weight: 700;
+    color: rgb(236, 236, 236);
 }
 
 #answer{
-    color: rgb(88, 88, 88);
+    color: rgb(221, 221, 221);
     font-size: 2rem;
 }
 
