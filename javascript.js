@@ -6,8 +6,7 @@ const input = document.getElementById('input');
 btns.forEach(el => el.addEventListener('click', calc));
 
 
-function calc(e){  
-    let btnValue = e.target.value;
+function calc(e, btnValue = e.target.value){  
     let isOperator = ['+', '-', '/', '*'].includes(btnValue);
     
 
@@ -141,3 +140,11 @@ function displayDot(){
         isDotAvailable = false;
     }
 }
+
+window.addEventListener('keydown', e => {
+    let isNumber = /\d/.test(e.key);
+    let isOtherValidKey = ['Backspace', '.', '/', '*', '+', '-'].includes(e.key);
+    if(isNumber || isOtherValidKey){
+        calc(e, e.key)
+    }
+});
